@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SEIX Facturador POS — Punto de venta con inventario para negocios ecuatorianos</title>
-<meta name="description" content="Vende, controla el stock de todas tus sucursales y emite comprobantes desde una computadora, un navegador o el celular. Funciona sin internet.">
+<meta name="description" content="Venda, controle el inventario de sus sucursales y emita comprobantes desde una computadora, un navegador o el celular. Funciona sin internet.">
 <link rel="icon" href="favicon.ico">
 <meta property="og:title" content="SEIX Facturador POS">
 <meta property="og:description" content="Punto de venta con inventario para negocios ecuatorianos. Funciona sin internet.">
@@ -52,7 +52,6 @@ section{padding:72px 0}
 .btn-linea{border-color:var(--azul-medio);color:var(--azul-medio);background:transparent}
 .btn-linea:hover{background:#EDF3FC}
 
-/* ===== barra ===== */
 header{
   background:var(--azul-profundo);position:sticky;top:0;z-index:50;
   border-bottom:1px solid rgba(255,255,255,.12);
@@ -67,7 +66,6 @@ header{
 .nav .btn{padding:9px 18px;font-size:14px}
 @media (max-width:720px){.nav nav a:not(.btn){display:none}}
 
-/* ===== héroe ===== */
 .hero{
   background:linear-gradient(135deg,#0A2A6B 0%,#1257C4 62%,#16B8E8 130%);
   color:#fff;padding:84px 0 96px;
@@ -78,9 +76,8 @@ header{
 .hero .sub{margin:20px 0 30px;font-size:17px;color:rgba(255,255,255,.88);max-width:48ch}
 .hero .sub strong{color:#fff}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-.hero .nota{margin-top:22px;font-size:14px;color:rgba(255,255,255,.75);max-width:44ch}
+.hero .nota{margin-top:22px;font-size:14px;color:rgba(255,255,255,.75);max-width:46ch}
 
-/* mock del POS */
 .mock{
   background:var(--blanco);border-radius:12px;overflow:hidden;
   box-shadow:0 24px 60px rgba(4,16,45,.35);
@@ -109,7 +106,6 @@ header{
   padding:3px 9px;background:var(--fondo);white-space:nowrap;
 }
 
-/* ===== secciones ===== */
 .eyebrow{
   font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
   color:var(--azul-medio);margin-bottom:12px;
@@ -142,7 +138,6 @@ h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;max-width:24ch}
 .s-oscura .lista-marcada li{color:rgba(255,255,255,.88)}
 .lista-marcada li strong{color:inherit}
 
-/* tarjeta offline */
 .offline-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:8px}
 @media (max-width:860px){.offline-grid{grid-template-columns:1fr}}
 .sync{
@@ -158,7 +153,6 @@ h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;max-width:24ch}
 .sync .titulo-sync{display:flex;align-items:center;gap:9px;font-weight:600;margin-bottom:8px}
 .sync .punto{width:8px;height:8px;border-radius:50%;background:#FFC24B}
 
-/* tablas */
 .tabla{width:100%;border-collapse:collapse;margin-top:36px;background:var(--blanco);font-size:15px}
 .tabla th,.tabla td{padding:13px 16px;border-bottom:1px solid var(--borde);text-align:left}
 .tabla thead th{
@@ -169,7 +163,6 @@ h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;max-width:24ch}
 .tabla td.no{color:#9AA3B5}
 .tabla .col-seix{background:#EDF6FC}
 
-/* ===== planes ===== */
 .switch{display:flex;align-items:center;gap:12px;margin-top:30px;flex-wrap:wrap}
 .switch button{
   font-family:'Public Sans',sans-serif;font-weight:600;font-size:14px;
@@ -194,7 +187,7 @@ h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;max-width:24ch}
 .plan h3{font-size:20px}
 .plan .para{font-size:13.5px;color:var(--texto-2);margin-top:4px}
 .plan .precio{display:flex;align-items:baseline;gap:5px;margin:18px 0 4px}
-.plan .precio .n{font-family:'Archivo',sans-serif;font-weight:800;font-size:38px;letter-spacing:-.03em}
+.plan .precio .n{font-family:'Archivo',sans-serif;font-weight:800;font-size:36px;letter-spacing:-.03em}
 .plan .precio .u{font-size:13.5px;color:var(--texto-2)}
 .plan .anual-nota{font-size:13px;color:var(--texto-2);min-height:1.4em}
 .plan ul{list-style:none;margin:18px 0 24px;flex:1;display:grid;gap:9px}
@@ -213,7 +206,6 @@ h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;max-width:24ch}
   padding:16px 20px;border-radius:0 8px 8px 0;font-size:14.5px;color:var(--texto-2);
 }
 
-/* faq */
 details{background:var(--blanco);border:1px solid var(--borde);border-radius:10px;margin-top:12px}
 summary{
   cursor:pointer;padding:16px 20px;font-weight:600;font-size:15.5px;list-style:none;
@@ -224,7 +216,6 @@ summary::after{content:"+";font-family:'Archivo',sans-serif;font-size:20px;color
 details[open] summary::after{content:"–"}
 details p{padding:0 20px 18px;color:var(--texto-2);font-size:15px}
 
-/* contacto + pie */
 .contacto-caja{
   margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;
 }
@@ -251,8 +242,8 @@ footer .fin{margin-left:auto;font-size:13.5px}
     <nav>
       <a href="#como-funciona">Cómo funciona</a>
       <a href="#planes">Planes</a>
-      <a href="#preguntas">Preguntas</a>
-      <a class="btn btn-cian" href="https://wa.me/593990122698">Escríbenos</a>
+      <a href="#preguntas">Preguntas frecuentes</a>
+      <a class="btn btn-cian" href="https://wa.me/593990122698?text=Buenas%2C%20quisiera%20informaci%C3%B3n%20sobre%20SEIX">Contáctenos</a>
     </nav>
   </div>
 </header>
@@ -260,16 +251,16 @@ footer .fin{margin-left:auto;font-size:13.5px}
 <div class="hero">
   <div class="wrap">
     <div>
-      <h1>Tu caja no se detiene cuando se cae el internet</h1>
-      <p class="sub"><strong>SEIX es el punto de venta con inventario para negocios ecuatorianos.</strong> Vende, controla el stock de todas tus sucursales y emite comprobantes desde una computadora, un navegador o el celular.</p>
+      <h1>Su caja no se detiene cuando falla el internet</h1>
+      <p class="sub"><strong>SEIX es el punto de venta con inventario para negocios ecuatorianos.</strong> Venda, controle el inventario de todas sus sucursales y emita comprobantes desde una computadora, un navegador o el celular.</p>
       <div class="ctas">
-        <a class="btn btn-cian" href="https://wa.me/593990122698?text=Hola,%20quiero%20conocer%20SEIX">Escríbenos por WhatsApp</a>
+        <a class="btn btn-cian" href="https://wa.me/593990122698?text=Buenas%2C%20quisiera%20conocer%20SEIX">Solicitar información</a>
         <a class="btn btn-linea-blanca" href="#planes">Ver planes</a>
       </div>
-      <p class="nota">Sin instalación complicada: te lo dejamos funcionando con tus productos y tu personal capacitado.</p>
+      <p class="nota">La instalación, la carga de sus productos y la capacitación de su personal están incluidas en todos los planes.</p>
     </div>
 
-    <div class="mock" role="img" aria-label="Pantalla del punto de venta de SEIX con una venta en curso y tres ventas guardadas sin conexión">
+    <div class="mock" role="img" aria-label="Representación de la pantalla del punto de venta de SEIX con una venta en curso y ventas guardadas sin conexión">
       <div class="barra">
         <img src="data:image/png;base64,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" alt="">
         SEIX · Punto de venta
@@ -278,10 +269,10 @@ footer .fin{margin-left:auto;font-size:13.5px}
       <table class="num">
         <thead><tr><th>Producto</th><th>Cant.</th><th>Precio</th></tr></thead>
         <tbody>
-          <tr><td>Arroz Conejo 2 kg</td><td>2</td><td>$4,90</td></tr>
-          <tr><td>Aceite La Favorita 1 L</td><td>1</td><td>$3,15</td></tr>
-          <tr><td>Atún Real lomitos 180 g</td><td>3</td><td>$5,25</td></tr>
-          <tr><td>Cola Tropical 3 L</td><td>1</td><td>$2,10</td></tr>
+          <tr><td>Arroz 2 kg</td><td>2</td><td>$4,90</td></tr>
+          <tr><td>Aceite vegetal 1 L</td><td>1</td><td>$3,15</td></tr>
+          <tr><td>Atún en lomitos 180 g</td><td>3</td><td>$5,25</td></tr>
+          <tr><td>Gaseosa 3 L</td><td>1</td><td>$2,10</td></tr>
         </tbody>
       </table>
       <div class="total num"><span>Cliente: Consumidor final</span><b>$15,40</b></div>
@@ -297,9 +288,9 @@ footer .fin{margin-left:auto;font-size:13.5px}
 <section>
   <div class="wrap">
     <p class="eyebrow">El problema</p>
-    <h2>Lo que pasa hoy en tu negocio</h2>
-    <p class="lead">Se va el internet y la fila se detiene. Un cliente pregunta si queda mercadería en la otra sucursal y nadie sabe. El cuadre de caja no da, y para encontrar la diferencia hay que revisar el día completo. Al mes siguiente descubres que llevas tres semanas vendiendo un producto por debajo del costo.</p>
-    <p class="lead">Ninguno de esos problemas es de facturación. Son de <strong style="color:var(--texto)">control</strong>. Y un emisor de comprobantes no los resuelve.</p>
+    <h2>Lo que ocurre hoy en muchos negocios</h2>
+    <p class="lead">Se interrumpe el internet y la fila se detiene. Un cliente pregunta si queda mercadería en la otra sucursal y nadie puede responder. El cuadre de caja no coincide, y encontrar la diferencia obliga a revisar el día completo. Al mes siguiente se descubre que un producto llevaba semanas vendiéndose por debajo del costo.</p>
+    <p class="lead">Ninguno de esos problemas es de facturación. Son de <strong style="color:var(--texto)">control</strong>, y un emisor de comprobantes no los resuelve.</p>
   </div>
 </section>
 
@@ -310,8 +301,8 @@ footer .fin{margin-left:auto;font-size:13.5px}
     <div class="tres">
       <div class="paso">
         <span class="k">1</span>
-        <h3>Vendes</h3>
-        <p>El cajero trabaja con el teclado, sin soltar la mano del lector de códigos. Una venta completa toma segundos.</p>
+        <h3>La venta</h3>
+        <p>El cajero opera con el teclado, sin soltar el lector de códigos. Una venta completa toma segundos.</p>
         <div class="teclitas">
           <span class="tecla">F2 nueva venta</span>
           <span class="tecla">F3 buscar cliente</span>
@@ -322,13 +313,13 @@ footer .fin{margin-left:auto;font-size:13.5px}
       </div>
       <div class="paso">
         <span class="k">2</span>
-        <h3>El sistema descuenta</h3>
-        <p>El stock baja de la sucursal correcta en el momento de la venta. El movimiento queda registrado con fecha, usuario y motivo. Nada se ajusta a mano.</p>
+        <h3>El descuento de inventario</h3>
+        <p>El stock se descuenta de la sucursal correcta en el momento de la venta. Cada movimiento queda registrado con fecha, usuario y motivo, sin ajustes manuales.</p>
       </div>
       <div class="paso">
         <span class="k">3</span>
-        <h3>Cierras la caja</h3>
-        <p>Apertura, ventas del turno, cierre y arqueo. Sabes quién vendió qué y cuánto debería haber en la gaveta antes de contarla.</p>
+        <h3>El cierre de caja</h3>
+        <p>Apertura, ventas del turno, cierre y arqueo. Antes de contar la gaveta ya se conoce quién vendió qué y cuánto debería contener.</p>
       </div>
     </div>
   </div>
@@ -337,13 +328,12 @@ footer .fin{margin-left:auto;font-size:13.5px}
 <section class="s-oscura">
   <div class="wrap offline-grid">
     <div>
-      <p class="eyebrow">Sin conexión</p>
-      <h2>Sigue vendiendo sin internet</h2>
-      <p class="lead">Cuando se cae el internet, SEIX no se bloquea. Las ventas se guardan en el equipo, el stock se reserva para que no vendas lo que ya no tienes, y todo se sincroniza solo cuando vuelve la señal.</p>
-      <p class="lead">Puedes ver en cualquier momento qué quedó pendiente de sincronizar. Nada se pierde en silencio.</p>
-      <p class="lead" style="color:#fff;font-weight:600">Es la diferencia entre cerrar la caja media hora o cerrar el local.</p>
+      <p class="eyebrow">Operación sin conexión</p>
+      <h2>El negocio sigue vendiendo sin internet</h2>
+      <p class="lead">Cuando se interrumpe la conexión, SEIX no se bloquea. Las ventas se guardan en el equipo, el stock se reserva localmente para no vender lo que ya no existe, y todo se sincroniza automáticamente al restablecerse la señal.</p>
+      <p class="lead">En cualquier momento puede consultarse qué quedó pendiente de sincronizar. Ninguna venta se pierde sin aviso.</p>
     </div>
-    <div class="sync num" role="img" aria-label="Pantalla de ventas pendientes de sincronizar">
+    <div class="sync num" role="img" aria-label="Representación de la pantalla de ventas pendientes de sincronizar">
       <div class="titulo-sync"><span class="punto"></span>Ventas pendientes de sincronizar</div>
       <div class="fila"><span>Venta 000-002-154 · $12,80</span><span class="estado">Guardada 12:41</span></div>
       <div class="fila"><span>Venta 000-002-155 · $6,35</span><span class="estado">Guardada 12:44</span></div>
@@ -355,12 +345,12 @@ footer .fin{margin-left:auto;font-size:13.5px}
 <section>
   <div class="wrap">
     <p class="eyebrow">Sucursales</p>
-    <h2>Una sola vista de todas tus sucursales</h2>
+    <h2>Una sola vista de todas sus sucursales</h2>
     <ul class="lista-marcada">
-      <li><strong>Stock por sucursal</strong>, no un total que no le sirve a nadie.</li>
-      <li><strong>Transferencias entre locales</strong> con su registro, para que la mercadería que sale de un lado aparezca del otro.</li>
-      <li><strong>Historial de inventario:</strong> qué se movió, cuándo, quién y por qué.</li>
-      <li><strong>Reportes de ventas</strong> por período, para ver qué se vende de verdad.</li>
+      <li><strong>Existencias por sucursal</strong>, no un total agregado.</li>
+      <li><strong>Transferencias entre locales</strong> con registro, de modo que la mercadería que sale de un punto conste en el otro.</li>
+      <li><strong>Historial de inventario:</strong> qué se movió, cuándo, quién y por qué motivo.</li>
+      <li><strong>Reportes de ventas</strong> por período.</li>
     </ul>
   </div>
 </section>
@@ -369,9 +359,9 @@ footer .fin{margin-left:auto;font-size:13.5px}
   <div class="wrap">
     <p class="eyebrow">Facturación</p>
     <h2>Comprobantes con la estructura que exige el SRI</h2>
-    <p class="lead">Emite <strong style="color:var(--texto)">facturas y notas de crédito</strong> con la estructura que exige el SRI: validación de cédula, RUC y pasaporte, tarifas de IVA vigentes, formas de pago según la tabla oficial, y numeración por establecimiento y punto de emisión.</p>
+    <p class="lead">SEIX emite <strong style="color:var(--texto)">facturas y notas de crédito</strong> con la estructura que exige el SRI: validación de cédula, RUC y pasaporte, tarifas de IVA vigentes, formas de pago según la tabla oficial, y numeración por establecimiento y punto de emisión.</p>
     <p class="lead">Cada comprobante genera su <strong style="color:var(--texto)">RIDE en PDF</strong>, listo para imprimir o enviar por correo al cliente.</p>
-    <p class="lead">El certificado de firma electrónica (.p12) se carga desde el sistema y <strong style="color:var(--texto)">se guarda cifrado</strong>: la clave nunca viaja de vuelta ni queda a la vista.</p>
+    <p class="lead">El certificado de firma electrónica (.p12) se carga desde el sistema y <strong style="color:var(--texto)">se almacena cifrado</strong>: la clave no se transmite de vuelta ni queda visible.</p>
   </div>
 </section>
 
@@ -383,9 +373,9 @@ footer .fin{margin-left:auto;font-size:13.5px}
     <table class="tabla">
       <thead><tr><th style="width:24%">Dónde</th><th>Para qué</th></tr></thead>
       <tbody>
-        <tr><td><strong>Windows</strong></td><td>La caja del local. Rápido, con atajos de teclado y funciona sin conexión.</td></tr>
-        <tr><td><strong>Navegador</strong></td><td>Revisar ventas o inventario desde donde estés, sin instalar nada.</td></tr>
-        <tr><td><strong>Celular</strong></td><td>Consultar stock y precios en el piso de venta o en bodega.</td></tr>
+        <tr><td><strong>Windows</strong></td><td>La caja del local. Rápida, con atajos de teclado y operación sin conexión.</td></tr>
+        <tr><td><strong>Navegador</strong></td><td>Consulta de ventas e inventario desde cualquier lugar, sin instalación.</td></tr>
+        <tr><td><strong>Celular</strong></td><td>Consulta de existencias y precios en el piso de venta o en bodega.</td></tr>
       </tbody>
     </table>
   </div>
@@ -393,8 +383,8 @@ footer .fin{margin-left:auto;font-size:13.5px}
 
 <section class="s-blanca">
   <div class="wrap">
-    <p class="eyebrow">Permisos</p>
-    <h2>Cada quien ve lo suyo</h2>
+    <p class="eyebrow">Perfiles y permisos</p>
+    <h2>Cada perfil accede a lo que le corresponde</h2>
     <div class="tres">
       <div class="paso" style="background:var(--fondo)">
         <h3>Cajero</h3>
@@ -402,35 +392,35 @@ footer .fin{margin-left:auto;font-size:13.5px}
       </div>
       <div class="paso" style="background:var(--fondo)">
         <h3>Supervisor</h3>
-        <p>Además ve inventario, productos y reportes.</p>
+        <p>Además consulta inventario, productos y reportes.</p>
       </div>
       <div class="paso" style="background:var(--fondo)">
         <h3>Administrador</h3>
         <p>Configura la empresa, los usuarios y el certificado.</p>
       </div>
     </div>
-    <p class="lead" style="margin-top:26px">El cajero no entra a la configuración. El supervisor no cambia el certificado. Se acabó la cuenta compartida.</p>
+    <p class="lead" style="margin-top:26px">El cajero no accede a la configuración y el supervisor no modifica el certificado. Sin cuentas compartidas.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <p class="eyebrow">La comparación honesta</p>
-    <h2>Por qué SEIX y no un emisor de comprobantes</h2>
-    <p class="lead">El SRI regala una herramienta para emitir comprobantes. Sirve para eso y para nada más.</p>
+    <p class="eyebrow">Comparación</p>
+    <h2>SEIX frente a un emisor de comprobantes</h2>
+    <p class="lead">El SRI ofrece una herramienta gratuita para emitir comprobantes. Cumple esa función, únicamente.</p>
     <table class="tabla">
       <thead><tr><th></th><th>Emisor gratuito</th><th class="col-seix">SEIX</th></tr></thead>
       <tbody>
-        <tr><td>Emitir comprobantes</td><td class="si">Sí</td><td class="si col-seix">Sí</td></tr>
+        <tr><td>Emisión de comprobantes</td><td class="si">Sí</td><td class="si col-seix">Sí</td></tr>
         <tr><td>Punto de venta con lector de códigos</td><td class="no">No</td><td class="si col-seix">Sí</td></tr>
         <tr><td>Control de inventario</td><td class="no">No</td><td class="si col-seix">Sí</td></tr>
         <tr><td>Varias sucursales</td><td class="no">No</td><td class="si col-seix">Sí</td></tr>
         <tr><td>Cierre y arqueo de caja</td><td class="no">No</td><td class="si col-seix">Sí</td></tr>
-        <tr><td>Funciona sin internet</td><td class="no">No</td><td class="si col-seix">Sí</td></tr>
+        <tr><td>Operación sin internet</td><td class="no">No</td><td class="si col-seix">Sí</td></tr>
         <tr><td>Usuarios con permisos</td><td class="no">No</td><td class="si col-seix">Sí</td></tr>
       </tbody>
     </table>
-    <p class="lead" style="margin-top:24px">Si solo necesitas emitir una factura al mes, usa la del SRI. Si tienes un negocio que vende todos los días, necesitas saber qué se vendió, qué queda y cuánto entró.</p>
+    <p class="lead" style="margin-top:24px">Si su necesidad es emitir una factura al mes, la herramienta del SRI es suficiente. Si su negocio vende todos los días, necesita saber qué se vendió, qué queda en inventario y cuánto ingresó.</p>
   </div>
 </section>
 
@@ -438,28 +428,30 @@ footer .fin{margin-left:auto;font-size:13.5px}
   <div class="wrap">
     <p class="eyebrow">Planes</p>
     <h2>Un plan para cada tamaño de negocio</h2>
-    <p class="lead">Precios en dólares, no incluyen IVA. El plan anual se paga diez meses y cubre doce. <strong style="color:var(--texto)">Ningún plan cobra implementación:</strong> te lo dejamos funcionando sin costo, con una permanencia mínima de 12 meses.</p>
+    <p class="lead">Valores en dólares; no incluyen IVA. El plan anual se paga diez meses y cubre doce. <strong style="color:var(--texto)">Ningún plan cobra implementación:</strong> el sistema se entrega funcionando, con permanencia mínima de 12 meses.</p>
 
     <div class="switch">
       <button id="b-mes" aria-pressed="true">Pago mensual</button>
       <button id="b-ano" aria-pressed="false">Pago anual</button>
-      <span class="ahorro" id="ahorro-nota">Con el pago anual ahorras el valor de dos meses</span>
+      <span class="ahorro" id="ahorro-nota">El pago anual equivale a diez meses</span>
     </div>
 
     <div class="planes num">
       <div class="plan">
         <h3>Emprendedor</h3>
-        <p class="para">Un local pequeño</p>
+        <p class="para">Un local que comienza</p>
         <div class="precio"><span class="n" data-mes="$85" data-ano="$850">$85</span><span class="u" data-mes="al mes" data-ano="al año">al mes</span></div>
-        <p class="anual-nota" data-mes="$850 al año — ahorras $170" data-ano="Equivale a $70,80 al mes">$850 al año — ahorras $170</p>
+        <p class="anual-nota" data-mes="$850 al año — dos meses sin costo" data-ano="Equivale a $70,80 al mes">$850 al año — dos meses sin costo</p>
         <ul>
-          <li><strong>1 caja</strong></li>
-          <li>Capacidad: <strong>150 ventas</strong> al día</li>
-          <li>Cobro e impresión de ticket</li>
-          <li>Cierre de caja diario</li>
-          <li>Soporte lunes a viernes, 9:00 a 18:00</li>
+          <li><strong>1 caja</strong> · 2 usuarios</li>
+          <li>Punto de venta con lector de códigos y atajos de teclado</li>
+          <li>Apertura, cierre y arqueo de caja</li>
+          <li>Inventario y catálogo de productos</li>
+          <li>Facturas y notas de crédito con RIDE en PDF</li>
+          <li>Operación sin conexión con sincronización</li>
+          <li>Soporte de lunes a viernes, 9:00 a 18:00</li>
         </ul>
-        <a class="btn btn-linea" href="https://wa.me/593990122698?text=Hola,%20me%20interesa%20el%20plan%20Emprendedor%20de%20SEIX">Empezar con Emprendedor</a>
+        <a class="btn btn-linea" href="https://wa.me/593990122698?text=Buenas%2C%20me%20interesa%20el%20plan%20Emprendedor%20de%20SEIX">Consultar por Emprendedor</a>
       </div>
 
       <div class="plan destacado">
@@ -467,97 +459,95 @@ footer .fin{margin-left:auto;font-size:13.5px}
         <h3>Integral</h3>
         <p class="para">El negocio que vende todos los días</p>
         <div class="precio"><span class="n" data-mes="$150" data-ano="$1.500">$150</span><span class="u" data-mes="al mes" data-ano="al año">al mes</span></div>
-        <p class="anual-nota" data-mes="$1.500 al año — ahorras $300" data-ano="Equivale a $125 al mes">$1.500 al año — ahorras $300</p>
+        <p class="anual-nota" data-mes="$1.500 al año — dos meses sin costo" data-ano="Equivale a $125 al mes">$1.500 al año — dos meses sin costo</p>
         <ul>
-          <li>Hasta <strong>2 cajas</strong></li>
-          <li>Capacidad: <strong>400 ventas</strong> al día</li>
+          <li>Hasta <strong>2 cajas</strong> · 6 usuarios</li>
           <li>Todo lo del plan Emprendedor</li>
-          <li>Fiado y convenios con empresas</li>
-          <li>Proyección de cuánto preparar o reponer</li>
-          <li>Consumo de insumos por venta</li>
-          <li>Soporte los 7 días, 10:00 a 23:00</li>
+          <li>Envío de comprobantes por correo al cliente</li>
+          <li>Reportes de ventas por período</li>
+          <li>Acceso desde navegador y consulta móvil de existencias y precios</li>
+          <li>Soporte los 7 días, de 10:00 a 23:00</li>
           <li>Actualizaciones normativas incluidas</li>
         </ul>
-        <a class="btn btn-azul" href="https://wa.me/593990122698?text=Hola,%20me%20interesa%20el%20plan%20Integral%20de%20SEIX">Empezar con Integral</a>
+        <a class="btn btn-azul" href="https://wa.me/593990122698?text=Buenas%2C%20me%20interesa%20el%20plan%20Integral%20de%20SEIX">Consultar por Integral</a>
       </div>
 
       <div class="plan">
         <h3>Pro Max</h3>
         <p class="para">Hasta dos locales</p>
         <div class="precio"><span class="n" data-mes="$280" data-ano="$2.800">$280</span><span class="u" data-mes="al mes" data-ano="al año">al mes</span></div>
-        <p class="anual-nota" data-mes="$2.800 al año — ahorras $560" data-ano="Equivale a $233,30 al mes">$2.800 al año — ahorras $560</p>
+        <p class="anual-nota" data-mes="$2.800 al año — dos meses sin costo" data-ano="Equivale a $233,30 al mes">$2.800 al año — dos meses sin costo</p>
         <ul>
-          <li>Hasta <strong>2 locales</strong> y 4 cajas</li>
-          <li>Capacidad <strong>ilimitada</strong></li>
+          <li>Hasta <strong>2 locales</strong> y 4 cajas · usuarios ilimitados</li>
           <li>Todo lo del plan Integral</li>
-          <li>Reportes consolidados por local</li>
-          <li>Costeo por producto y receta</li>
-          <li>Fallas críticas atendidas en 30 minutos</li>
-          <li>Una visita presencial al mes</li>
+          <li>Inventario multisucursal: transferencias e historial completo</li>
+          <li>Reportes por sucursal</li>
+          <li>Respaldo diario</li>
+          <li>Atención de fallas críticas en 30 minutos</li>
+          <li>Una visita presencial al mes en Guayaquil</li>
         </ul>
-        <a class="btn btn-linea" href="https://wa.me/593990122698?text=Hola,%20me%20interesa%20el%20plan%20Pro%20Max%20de%20SEIX">Empezar con Pro Max</a>
+        <a class="btn btn-linea" href="https://wa.me/593990122698?text=Buenas%2C%20me%20interesa%20el%20plan%20Pro%20Max%20de%20SEIX">Consultar por Pro Max</a>
       </div>
 
       <div class="plan">
-        <h3>Pro Max Multiplataforma</h3>
-        <p class="para">Cadenas en crecimiento</p>
-        <div class="precio"><span class="n" data-mes="$420" data-ano="$4.200">$420</span><span class="u" data-mes="al mes" data-ano="al año">al mes</span></div>
-        <p class="anual-nota" data-mes="$4.200 al año — ahorras $840" data-ano="Equivale a $350 al mes">$4.200 al año — ahorras $840</p>
+        <h3>Corporativo</h3>
+        <p class="para">Cadenas y grupos de empresas</p>
+        <div class="precio"><span class="n" data-mes="desde $420" data-ano="desde $4.200">desde $420</span><span class="u" data-mes="al mes" data-ano="al año">al mes</span></div>
+        <p class="anual-nota" data-mes="Cotización según sucursales y volumen" data-ano="Cotización según sucursales y volumen">Cotización según sucursales y volumen</p>
         <ul>
-          <li>Locales y cajas <strong>ilimitados</strong></li>
+          <li>Locales y cajas <strong>sin tope fijo</strong></li>
           <li>Todo lo del plan Pro Max</li>
-          <li>App para caja, tablet y celular</li>
-          <li>Panel web para el dueño</li>
-          <li>Pedidos por WhatsApp y para llevar</li>
-          <li>Integración con tu sistema contable</li>
+          <li>Varias empresas con información separada</li>
+          <li>Instalación y acompañamiento dedicados</li>
           <li>Soporte prioritario todos los días</li>
+          <li>Acuerdo de nivel de servicio</li>
         </ul>
-        <a class="btn btn-linea" href="https://wa.me/593990122698?text=Hola,%20me%20interesa%20el%20plan%20Pro%20Max%20Multiplataforma%20de%20SEIX">Conversemos</a>
+        <a class="btn btn-linea" href="https://wa.me/593990122698?text=Buenas%2C%20quisiera%20una%20cotizaci%C3%B3n%20del%20plan%20Corporativo%20de%20SEIX">Solicitar cotización</a>
       </div>
     </div>
 
     <div class="extras">
-      <b>Condiciones:</b> la implementación, la carga de tus productos y la capacitación van sin costo en todos los planes, con permanencia mínima de 12 meses; si el servicio termina antes, se factura la implementación proporcional a los meses restantes. Desarrollos a la medida e integraciones: $30 por hora, previa cotización aprobada. Hardware (equipo de caja, impresora térmica, cajón monedero) no incluido; podemos cotizarlo.
+      <b>Condiciones:</b> la implementación, la carga de productos y la capacitación están incluidas en todos los planes, con permanencia mínima de 12 meses; en caso de terminación anticipada se factura la implementación proporcional a los meses restantes. Desarrollos a la medida e integraciones: $30 por hora, previa cotización aprobada. El hardware (equipo de caja, impresora térmica, cajón monedero) no está incluido y puede cotizarse por separado.
     </div>
 
     <div class="aviso-firma">
-      El certificado de firma electrónica lo emite una entidad certificadora acreditada y va a nombre de tu empresa. Cuesta entre $30 y $60 al año y no lo cobramos nosotros. Te acompañamos a tramitarlo.
+      El certificado de firma electrónica lo emite una entidad certificadora acreditada y va a nombre de su empresa. Su costo anual está entre $30 y $60 y no lo cobramos nosotros. Le acompañamos en el trámite.
     </div>
   </div>
 </section>
 
-<section class="s-blanca" id="preguntas">
+<section class="s-blanca" id="preguntas" style="background:var(--fondo)">
   <div class="wrap">
     <p class="eyebrow">Preguntas frecuentes</p>
-    <h2>Lo que todos preguntan</h2>
+    <h2>Preguntas frecuentes</h2>
     <div style="max-width:760px;margin-top:20px">
       <details>
-        <summary>¿Qué necesito para empezar?</summary>
-        <p>Una computadora con Windows 10 o superior de 64 bits. Nada más. Si vas a emitir comprobantes electrónicos, además tu certificado de firma electrónica.</p>
+        <summary>¿Qué se necesita para empezar?</summary>
+        <p>Una computadora con Windows 10 o superior de 64 bits. Para emitir comprobantes, además, el certificado de firma electrónica de su empresa.</p>
       </details>
       <details>
-        <summary>¿Y si se me va el internet?</summary>
-        <p>Sigues vendiendo. Las ventas quedan guardadas en el equipo y se sincronizan cuando vuelve la conexión.</p>
+        <summary>¿Qué ocurre si se interrumpe el internet?</summary>
+        <p>El negocio sigue vendiendo. Las ventas quedan guardadas en el equipo y se sincronizan al restablecerse la conexión.</p>
       </details>
       <details>
-        <summary>¿Mis datos de quién son?</summary>
-        <p>Tuyos. Si algún día decides irte, te los entregamos completos.</p>
+        <summary>¿De quién son los datos?</summary>
+        <p>Del cliente. Si decide terminar el servicio, se le entrega su información completa.</p>
       </details>
       <details>
-        <summary>¿Tengo que firmar permanencia?</summary>
-        <p>Sí, 12 meses. A cambio, la implementación, la carga de tus datos y la capacitación van sin costo. Cumplido el año, el plan se renueva mes a mes y lo cancelas cuando quieras.</p>
+        <summary>¿Existe permanencia mínima?</summary>
+        <p>Sí, de 12 meses. A cambio, la implementación, la carga de datos y la capacitación no tienen costo. Cumplido el año, el plan se renueva mes a mes y puede cancelarse en cualquier momento.</p>
       </details>
       <details>
-        <summary>¿Puedo cambiar de plan?</summary>
-        <p>Sí, cuando lo necesites. Si creces a mitad de año, se cobra solo la diferencia.</p>
+        <summary>¿Se puede cambiar de plan?</summary>
+        <p>Sí, en cualquier momento. Al pasar a un plan superior se cobra únicamente la diferencia.</p>
       </details>
       <details>
         <summary>¿Sirve para varias empresas?</summary>
-        <p>Sí. Cada empresa tiene su información completamente separada.</p>
+        <p>Sí. Cada empresa mantiene su información completamente separada.</p>
       </details>
       <details>
-        <summary>¿Quién lo mantiene?</summary>
-        <p>AJLB Technologies, desarrolladores del sistema. No es software revendido: lo hacemos y lo sostenemos nosotros.</p>
+        <summary>¿Quién desarrolla y mantiene el sistema?</summary>
+        <p>AJLB Technologies, en Ecuador. No es software revendido: lo desarrollamos y lo sostenemos directamente.</p>
       </details>
     </div>
   </div>
@@ -566,16 +556,16 @@ footer .fin{margin-left:auto;font-size:13.5px}
 <section class="s-oscura" id="contacto">
   <div class="wrap">
     <p class="eyebrow">Contacto</p>
-    <h2>Hablemos</h2>
-    <p class="lead">Cuéntanos cuántos locales tienes y qué vendes. Te mostramos el sistema con tus propios productos, sin compromiso.</p>
+    <h2>Conversemos sobre su negocio</h2>
+    <p class="lead">Indíquenos cuántos locales tiene y qué comercializa. Le mostramos el sistema con sus propios productos, sin compromiso.</p>
     <div class="contacto-caja">
-      <a class="canal" href="https://wa.me/593990122698?text=Hola,%20quiero%20ver%20SEIX%20con%20mis%20productos" style="text-decoration:none;color:inherit;display:block">
+      <a class="canal" href="https://wa.me/593990122698?text=Buenas%2C%20quisiera%20ver%20SEIX%20con%20los%20productos%20de%20mi%20negocio" style="text-decoration:none;color:inherit;display:block">
         <div class="t">WhatsApp</div><div class="v num">099 012 2698</div>
       </a>
       <div class="canal"><div class="t">Teléfono</div><div class="v num">+593 99 012 2698</div></div>
     </div>
     <p style="margin-top:30px">
-      <a class="btn btn-cian" href="https://wa.me/593990122698?text=Hola,%20quiero%20agendar%20una%20demostraci%C3%B3n%20de%20SEIX">Agendar una demostración</a>
+      <a class="btn btn-cian" href="https://wa.me/593990122698?text=Buenas%2C%20quisiera%20agendar%20una%20presentaci%C3%B3n%20de%20SEIX">Agendar una presentación</a>
     </p>
   </div>
 </section>
@@ -599,8 +589,8 @@ footer .fin{margin-left:auto;font-size:13.5px}
     bm.setAttribute('aria-pressed', m==='mes');
     ba.setAttribute('aria-pressed', m==='ano');
     nota.textContent = m==='ano'
-      ? 'Pagas diez meses y cubres doce'
-      : 'Con el pago anual ahorras el valor de dos meses';
+      ? 'Se pagan diez meses y se cubren doce'
+      : 'El pago anual equivale a diez meses';
   }
   bm.addEventListener('click',function(){set('mes')});
   ba.addEventListener('click',function(){set('ano')});
